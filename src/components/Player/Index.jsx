@@ -4,7 +4,6 @@ import useSound from "use-sound"; // for handling the sound
 import beatOfNature from "../../assets/the-beat-of-nature.mp3"; // importing the music
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
-// import { IconContext } from "react-icons"; // for customazing the icons
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -61,21 +60,14 @@ const Player = () => {
   return (
     <div className='container'>
       <div className='player'>
-        <h2>Playing Now</h2>
+        <div className='drag-symbol'></div>
+        <h2 className='tag'>New Releases</h2>
         <div className="music-cover"></div>
-        <div>
+        <div className='music-information'>
           <h3 className="title">Beat of Nature</h3>
-          <p className="subTitle">Qala</p>
+          <p className="subtitle">Qala</p>
         </div>
         <div className='time-bar'>
-          <div className="time">
-            <span className='time-current'>
-              {currTime.min}:{currTime.sec}
-            </span>
-            <span className='time-end'>
-              {time.min}:{time.sec}
-            </span>
-          </div>
           <input
             type="range"
             min="0"
@@ -87,6 +79,14 @@ const Player = () => {
               sound.seek([e.target.value]);
             }}
           />
+          <div className="time">
+            <span className='time-current'>
+              {currTime.min}:{currTime.sec}
+            </span>
+            <span className='time-end'>
+              {time.min}:{time.sec}
+            </span>
+          </div>
         </div>
         <div className='controllers-container'>
           <div className='controllers'>
