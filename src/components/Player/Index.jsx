@@ -5,6 +5,8 @@ import beatOfNature from "../../assets/Macy_Gray_Cold_World.mp3"; // importing t
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
 import IconShuffle from "../../images/icon-shuffle.svg"
+import IconSound from "../../images/icon-sound.svg"
+import IconList from "../../images/icon-list.svg"
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -105,7 +107,9 @@ const Player = () => {
           </div>
         </div>
         <div className='controllers-small'>
-          <img src={IconShuffle} lassName="controllers-small-item" alt="" />
+          <img src={IconShuffle} className="controllers-small-item" alt="icon" />
+          <img src={IconSound} className="controllers-small-item" alt="icon" />
+          <img src={IconList} className="controllers-small-item" alt="icon" />
         </div>
       </div>
     </div>

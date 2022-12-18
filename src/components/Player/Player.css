@@ -26,7 +26,6 @@ body {
   width: 44px;
   height: 5px;
   margin: auto;
-  margin-top: 1rem;
   border-radius: 50px;
   background-color: #e7e7e7;
 }
@@ -135,11 +134,15 @@ button {
   margin: auto;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0rem 2rem;
 }
 
 .play-pause-button {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  fill: #8c35ff;
 }
 
 .prev-next-button {
@@ -147,9 +150,16 @@ button {
   height: 2.25rem;
 }
 
+.controllers-small {
+  padding: 0rem 2rem;
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
 .controllers-small-item {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 input[type='range'] {
@@ -157,7 +167,7 @@ input[type='range'] {
   height: 4px;
   width: 100%;
   border-radius: 50px;
-  background-color: #000102;
+  background-color: #e0e3e6;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -165,6 +175,6 @@ input[type=range]::-webkit-slider-thumb {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #000102;
+  background: #8c35ff;
   cursor: pointer;
 }
