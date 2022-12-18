@@ -60,46 +60,48 @@ const Player = () => {
 
   return (
     <div className='container'>
-      <h2>Playing Now</h2>
-      <img className="musicCover" src="https://picsum.photos/200/200" alt="cover image"/>
-      <div>
-        <h3 className="title">Rubaiyyan</h3>
-        <p className="subTitle">Qala</p>
-      </div>
-      <div className='time-bar'>
-        <div className="time">
-          <p>
-            {currTime.min}:{currTime.sec}
-          </p>
-          <p>
-            {time.min}:{time.sec}
-          </p>
+      <div className='player'>
+        <h2>Playing Now</h2>
+        <img className="musicCover" src="https://picsum.photos/200/200" alt="cover image"/>
+        <div>
+          <h3 className="title">Rubaiyyan</h3>
+          <p className="subTitle">Qala</p>
         </div>
-        <input
-          type="range"
-          min="0"
-          max={duration / 1000}
-          default="0"
-          value={seconds}
-          className="timeline"
-          onChange={(e) => {
-            sound.seek([e.target.value]);
-          }}
-        />
-      </div>
-      <div className='controllers-container'>
-        <div className='controllers'>
-          <BiSkipPrevious className='prev-next-button' />
-          {isPlaying ? (
-              <button>
-                <AiFillPauseCircle className='play-pause-button' onClick={playingButton}/>
-              </button>
-            ) : (
-              <button>
-                <AiFillPlayCircle className='play-pause-button' onClick={playingButton}/>
-              </button>
-            )}
-            <BiSkipNext className='prev-next-button' />
+        <div className='time-bar'>
+          <div className="time">
+            <span className='time-current'>
+              {currTime.min}:{currTime.sec}
+            </span>
+            <span className='time-end'>
+              {time.min}:{time.sec}
+            </span>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max={duration / 1000}
+            default="0"
+            value={seconds}
+            className="timeline"
+            onChange={(e) => {
+              sound.seek([e.target.value]);
+            }}
+          />
+        </div>
+        <div className='controllers-container'>
+          <div className='controllers'>
+            <BiSkipPrevious className='prev-next-button' />
+            {isPlaying ? (
+                <button>
+                  <AiFillPauseCircle className='play-pause-button' onClick={playingButton}/>
+                </button>
+              ) : (
+                <button>
+                  <AiFillPlayCircle className='play-pause-button' onClick={playingButton}/>
+                </button>
+              )}
+              <BiSkipNext className='prev-next-button' />
+          </div>
         </div>
       </div>
     </div>

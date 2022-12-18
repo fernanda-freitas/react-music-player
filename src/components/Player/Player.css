@@ -6,9 +6,29 @@
   transform: translateY(-50%);
 }
 
+.player {
+  max-width: 200px;
+  margin: auto;
+}
+
 button {
   background: none;
   border: none;
+}
+
+.time {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.time-current {
+  margin-right: 2rem;
+}
+
+.timeline {
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .controllers-container {
