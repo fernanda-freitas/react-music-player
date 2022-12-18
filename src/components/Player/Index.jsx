@@ -32,15 +32,15 @@ const Player = () => {
   const [seconds, setSeconds] = useState();
 
   useEffect(() => {
-    if (duration) {
-      const sec = duration / 1000;
-      const min = Math.floor(sec / 60);
-      const secRemain = Math.floor(sec % 60);
-      setTime({
-        min: min,
-        sec: secRemain
-      });
-    }
+    // if (duration) {
+    //   const sec = duration / 1000;
+    //   const min = Math.floor(sec / 60);
+    //   const secRemain = Math.floor(sec % 60);
+    //   setTime({
+    //     min: min,
+    //     sec: secRemain
+    //   });
+    // }
   }, [isPlaying]);
 
   useEffect(() => {
