@@ -2,7 +2,7 @@
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 30%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -11,7 +11,22 @@ button {
   border: none;
 }
 
+.controllers-container {
+  display: flex;
+}
+
+.controllers {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 .play-pause-button {
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
+}
+
+.prev-next-button {
+  width: 2.25rem;
+  height: 2.25rem;
 }
