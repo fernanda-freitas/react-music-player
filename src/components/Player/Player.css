@@ -142,7 +142,7 @@ button {
 .play-pause-button {
   height: 3.5rem;
   width: 3.5rem;
-  fill: #8c35ff;
+  fill: #1a1a1a;
 }
 
 .play-pause-button:hover {
@@ -152,6 +152,7 @@ button {
 .prev-next-button {
   width: 2.25rem;
   height: 2.25rem;
+  fill: #a8a9ab;
 }
 
 .controllers-small {
