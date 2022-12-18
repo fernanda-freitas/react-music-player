@@ -1,9 +1,10 @@
 import './Player.css';
 import { useEffect, useState } from "react";
 import useSound from "use-sound"; // for handling the sound
-import beatOfNature from "../../assets/the-beat-of-nature.mp3"; // importing the music
+import beatOfNature from "../../assets/Macy_Gray_Cold_World.mp3"; // importing the music
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // icons for next and previous track
+import IconShuffle from "../../images/icon-shuffle.svg"
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -64,8 +65,8 @@ const Player = () => {
         <h2 className='tag'>New Releases</h2>
         <div className="music-cover"></div>
         <div className='music-information'>
-          <h3 className="title">Beat of Nature</h3>
-          <p className="subtitle">Qala</p>
+          <h3 className="title">Cold World</h3>
+          <p className="subtitle">Macy gray</p>
         </div>
         <div className='time-bar'>
           <input
@@ -102,6 +103,9 @@ const Player = () => {
               )}
               <BiSkipNext className='prev-next-button' />
           </div>
+        </div>
+        <div className='controllers-small'>
+          <img src={IconShuffle} lassName="controllers-small-item" alt="" />
         </div>
       </div>
     </div>

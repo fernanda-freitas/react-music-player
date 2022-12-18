@@ -14,7 +14,7 @@ body {
   max-width: 300px;
   height: auto;
   margin: auto;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem 2rem 0rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -147,13 +147,17 @@ button {
   height: 2.25rem;
 }
 
+.controllers-small-item {
+  width: 1rem;
+  height: 1rem;
+}
 
 input[type='range'] {
   -webkit-appearance: none;
   height: 4px;
   width: 100%;
   border-radius: 50px;
-  background-color: rgb(236, 236, 236);
+  background-color: #000102;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -161,6 +165,6 @@ input[type=range]::-webkit-slider-thumb {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: pink;
+  background: #000102;
   cursor: pointer;
 }
