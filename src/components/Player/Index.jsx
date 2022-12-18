@@ -41,7 +41,7 @@ const Player = () => {
         sec: secRemain
       });
     }
-  }, [isPlaying]);
+  }, );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -62,9 +62,9 @@ const Player = () => {
     <div className='container'>
       <div className='player'>
         <h2>Playing Now</h2>
-        <img className="musicCover" src="https://picsum.photos/200/200" alt="cover image"/>
+        <div className="music-cover"></div>
         <div>
-          <h3 className="title">Rubaiyyan</h3>
+          <h3 className="title">Beat of Nature</h3>
           <p className="subTitle">Qala</p>
         </div>
         <div className='time-bar'>
