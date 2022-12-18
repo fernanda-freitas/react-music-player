@@ -1,0 +1,9 @@
+button {
+  background: none;
+  border: none;
+}
+
+.play-pause-button {
+  height: 48px;
+  width: 48px;
+}
