@@ -145,6 +145,10 @@ button {
   fill: #8c35ff;
 }
 
+.play-pause-button:hover {
+  cursor: pointer;
+}
+
 .prev-next-button {
   width: 2.25rem;
   height: 2.25rem;
