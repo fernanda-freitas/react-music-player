@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-music-player/static/css/main.5cee0234.css",
+    "main.js": "/react-music-player/static/js/main.90043860.js",
+    "static/js/845.25b13742.chunk.js": "/react-music-player/static/js/845.25b13742.chunk.js",
+    "static/js/787.c2652ce4.chunk.js": "/react-music-player/static/js/787.c2652ce4.chunk.js",
+    "static/media/Macy_Gray_Cold_World.mp3": "/react-music-player/static/media/Macy_Gray_Cold_World.09fdf8d4d772d3a23b87.mp3",
+    "index.html": "/react-music-player/index.html",
+    "static/media/icon-sound.svg": "/react-music-player/static/media/icon-sound.74a7c41e20bbd9130c2c9dd4d90a9628.svg",
+    "static/media/icon-list.svg": "/react-music-player/static/media/icon-list.942979b55eddee544204dea3c91112dc.svg",
+    "static/media/icon-shuffle.svg": "/react-music-player/static/media/icon-shuffle.ad73e23a71436450a7cf22b192af0ee9.svg",
+    "main.5cee0234.css.map": "/react-music-player/static/css/main.5cee0234.css.map",
+    "main.90043860.js.map": "/react-music-player/static/js/main.90043860.js.map",
+    "845.25b13742.chunk.js.map": "/react-music-player/static/js/845.25b13742.chunk.js.map",
+    "787.c2652ce4.chunk.js.map": "/react-music-player/static/js/787.c2652ce4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cee0234.css",
+    "static/js/main.90043860.js"
+  ]
+}
