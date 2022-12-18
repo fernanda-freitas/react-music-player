@@ -21,7 +21,7 @@ const Player = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h2>Playing Now</h2>
       <img className="musicCover" src="https://picsum.photos/200/200" alt="cover image"/>
       <div>
