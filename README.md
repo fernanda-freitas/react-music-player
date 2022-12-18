@@ -5,7 +5,7 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+After cloning the project, within the project's folder you can run:
 
 ### `npm start`
 
